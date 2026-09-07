@@ -432,3 +432,255 @@ footer {
         height: 350px;
     }
  }
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-hero {
+    min-height: 88vh;
+    padding: 150px 25px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at center, #1c0808 0%, #090909 45%, #050505 100%);
+}
+
+.home-hero h1 {
+    margin-top: 25px;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(50px, 10vw, 110px);
+    line-height: 0.95;
+    letter-spacing: 5px;
+}
+
+.home-hero h2 {
+    margin-top: 15px;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(22px, 4vw, 42px);
+    font-weight: 400;
+    letter-spacing: 12px;
+    color: #b30000;
+}
+
+.hero-quote {
+    margin-top: 40px;
+    max-width: 650px;
+    color: #aaa;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(16px, 2vw, 21px);
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 14px 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.primary-button {
+    background: #b30000;
+    border: 1px solid #b30000;
+}
+
+.primary-button:hover {
+    background: #8f0000;
+    border-color: #8f0000;
+}
+
+.secondary-button {
+    border: 1px solid #444;
+    color: #ccc;
+}
+
+.secondary-button:hover {
+    border-color: #aaa;
+    color: #fff;
+}
+
+
+/* =========================================
+   HOME INTRO
+========================================= */
+
+.home-intro {
+    max-width: 800px;
+    margin: auto;
+    padding: 130px 25px;
+    text-align: center;
+}
+
+.home-intro h2 {
+    margin: 20px 0 30px;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(30px, 5vw, 50px);
+}
+
+.home-intro p {
+    margin-bottom: 20px;
+    color: #999;
+    font-size: 15px;
+}
+
+.red-text {
+    color: #b30000 !important;
+    font-family: 'Cinzel', serif;
+    font-size: 25px !important;
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   EXPLORE SECTION
+========================================= */
+
+.home-explore {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    margin-top: 15px;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(30px, 5vw, 48px);
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.explore-card {
+    position: relative;
+    padding: 40px;
+    min-height: 250px;
+    background: #0d0d0d;
+    border: 1px solid #222;
+    transition: 0.3s ease;
+}
+
+.explore-card:hover {
+    transform: translateY(-5px);
+    border-color: #555;
+}
+
+.explore-card > span {
+    color: #b30000;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+}
+
+.explore-card h3 {
+    margin-top: 30px;
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+}
+
+.explore-card p {
+    margin-top: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+.explore-card strong {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* =========================================
+   FINAL HOME SECTION
+========================================= */
+
+.home-final {
+    padding: 160px 25px;
+    text-align: center;
+    border-top: 1px solid #191919;
+    background:
+        radial-gradient(circle at center, #180606 0%, #070707 50%, #050505 100%);
+}
+
+.home-final h2 {
+    margin: 25px 0 45px;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(35px, 7vw, 70px);
+    line-height: 1.15;
+}
+
+
+/* =========================================
+   MOBILE HOME
+========================================= */
+
+@media (max-width: 800px) {
+
+    .home-hero {
+        min-height: 85vh;
+        padding: 110px 20px 90px;
+    }
+
+    .home-hero h1 {
+        letter-spacing: 2px;
+    }
+
+    .home-hero h2 {
+        letter-spacing: 6px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-intro {
+        padding: 90px 20px;
+    }
+
+    .home-explore {
+        padding: 80px 20px;
+    }
+
+    .explore-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-card {
+        min-height: 220px;
+        padding: 30px;
+    }
+
+    .home-final {
+        padding: 110px 20px;
+    }
+
+    }
