@@ -1,0 +1,353 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --background: #080808;
+    --surface: #111111;
+    --surface-light: #181818;
+    --text: #f2f2f2;
+    --muted: #888888;
+    --accent: #b30000;
+    --border: #292929;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 7%;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #aaa;
+    font-size: 12px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 8%;
+
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(179, 0, 0, .18),
+            transparent 35%
+        ),
+        linear-gradient(
+            120deg,
+            #050505,
+            #101010
+        );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.eyebrow,
+.label {
+    color: var(--accent);
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(45px, 9vw, 100px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+h1 span {
+    display: block;
+    color: #aaa;
+}
+
+.intro {
+    max-width: 600px;
+    margin-top: 30px;
+
+    color: #aaa;
+    font-size: 16px;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 14px 23px;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    transition: .3s;
+}
+
+.primary {
+    background: var(--accent);
+}
+
+.primary:hover {
+    background: #d00000;
+}
+
+.secondary {
+    border: 1px solid #444;
+}
+
+.secondary:hover {
+    background: #181818;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 120px 8%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(32px, 6vw, 65px);
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.text {
+    max-width: 700px;
+    color: #999;
+    margin-bottom: 18px;
+}
+
+
+/* CHAPTERS */
+
+.chapters {
+    max-width: 1200px;
+}
+
+.chapter-list {
+    margin-top: 45px;
+    border-top: 1px solid var(--border);
+}
+
+.chapter {
+    display: grid;
+    grid-template-columns: 70px 1fr 30px;
+    align-items: center;
+
+    padding: 25px 10px;
+
+    border-bottom: 1px solid var(--border);
+
+    transition: .3s;
+}
+
+.chapter:hover {
+    background: var(--surface);
+    padding-left: 20px;
+}
+
+.chapter > span {
+    font-family: 'Cinzel', serif;
+    color: #555;
+    font-size: 22px;
+}
+
+.chapter small {
+    display: block;
+    color: #666;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.chapter strong {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+}
+
+.chapter b {
+    color: var(--accent);
+}
+
+
+/* CHARACTERS */
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.character-card {
+    min-height: 230px;
+    padding: 25px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.character-number {
+    color: var(--accent);
+    font-family: 'Cinzel', serif;
+    margin-bottom: auto;
+}
+
+.character-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 23px;
+}
+
+.character-card p {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* FINAL */
+
+.final {
+    text-align: center;
+    padding: 150px 8%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(179, 0, 0, .15),
+            transparent 45%
+        );
+}
+
+.final h2 {
+    margin-bottom: 40px;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid var(--border);
+    padding: 40px 8%;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #666;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 100px 25px 70px;
+    }
+
+    .section {
+        padding: 80px 25px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .character-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chapter {
+        grid-template-columns: 50px 1fr 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
