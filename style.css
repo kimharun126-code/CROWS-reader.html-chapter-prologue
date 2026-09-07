@@ -684,3 +684,85 @@ footer {
     }
 
     }
+
+/* =========================================
+   CHAPTER READING
+========================================= */
+
+.chapter-header {
+    max-width: 900px;
+    margin: auto;
+    padding: 130px 25px 70px;
+    text-align: center;
+}
+
+.chapter-header h1 {
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(42px, 7vw, 72px);
+}
+
+.chapter-divider {
+    width: 70px;
+    height: 1px;
+    margin: 35px auto 0;
+    background: #b30000;
+}
+
+.chapter-content {
+    max-width: 760px;
+    margin: auto;
+    padding: 40px 25px 100px;
+}
+
+.chapter-content p {
+    margin-bottom: 28px;
+    color: #b5b5b5;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.chapter-navigation {
+    max-width: 760px;
+    margin: auto;
+    padding: 35px 25px 100px;
+    border-top: 1px solid #222;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.chapter-navigation a {
+    color: #999;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.chapter-navigation a:hover {
+    color: #fff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .chapter-header {
+        padding: 90px 20px 50px;
+    }
+
+    .chapter-content {
+        padding: 30px 20px 70px;
+    }
+
+    .chapter-content p {
+        font-size: 16px;
+        line-height: 1.9;
+    }
+
+    .chapter-navigation {
+        padding: 30px 20px 70px;
+    }
+
+    }
