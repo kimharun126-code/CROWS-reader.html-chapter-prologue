@@ -6,6 +6,7 @@
       "title": "The Beginning",
       "type": "prologue",
       "status": "published",
+      "description": "The beginning of humanity, the birth of sin, and the arrival of the Hex.",
       "file": "data/chapter/prologue.json"
     },
     {
@@ -14,6 +15,7 @@
       "title": "YOUR CHAPTER ONE TITLE",
       "type": "chapter",
       "status": "published",
+      "description": "The story continues...",
       "file": "data/chapter/chapter-01.json"
     }
   ]
