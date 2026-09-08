@@ -126,9 +126,9 @@
 
 
                     card.className =
-                        "chapter-card";
-
-
+    chapter.status === "published"
+    ? "chapter-card"
+    : "chapter-card coming-soon";
                     const number =
                         document.createElement("span");
 
