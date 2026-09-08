@@ -766,3 +766,14 @@ footer {
     }
 
     }
+    .chapter-card.coming-soon {
+    opacity: 0.55;
+}
+
+.chapter-card.coming-soon a {
+    cursor: default;
+}
+
+.chapter-card.coming-soon a:hover {
+    color: #999;
+}
