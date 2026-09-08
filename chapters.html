@@ -1,7 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Chapters | Chaotic World: Raid Of Sins</title>
@@ -9,161 +12,233 @@
     <meta name="description" content="Read Chaotic World: Raid Of Sins, beginning with the Prologue and continuing through the chapters.">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
     <header>
+
         <nav>
 
             <a href="index.html" class="logo">
                 CHAOTIC WORLD
             </a>
 
+
             <div class="nav-links">
+
                 <a href="index.html">Home</a>
+
                 <a href="story.html">Story</a>
+
                 <a href="chapters.html">Chapters</a>
+
                 <a href="characters.html">Characters</a>
+
                 <a href="world.html">World</a>
+
                 <a href="gallery.html">Gallery</a>
+
                 <a href="about.html">About</a>
 
             </div>
 
         </nav>
+
     </header>
 
 
     <main>
 
+
         <section class="page-hero">
 
             <span class="eyebrow">
-                THE MEMORIES 
+                THE MEMORIES
             </span>
+
 
             <h1>
                 Chapters
             </h1>
 
+
             <p>
+
                 Enter the world of
                 <em>Chaotic World: Raid Of Sins</em>.
+
                 The story begins here.
+
             </p>
 
         </section>
 
 
+
         <section class="chapters-section" id="chapters-list">
 
-    <p>Loading chapters...</p>
+            <p>
+                Loading chapters...
+            </p>
 
-</section>
-
-<script>
-
-    fetch("data/chapters.json?v=2")
-
-        .then(response => response.json())
-
-        .then(data => {
-
-            const list = document.getElementById("chapters-list");
-
-            list.innerHTML = "";
-
-            data.chapters.forEach(chapter => {
-
-                const card = document.createElement("div");
-
-                card.className = "chapter-card";
-
-                const number = document.createElement("span");
-
-                number.className = "chapter-number";
-
-                number.textContent = chapter.number;
+        </section>
 
 
-                const content = document.createElement("div");
+    </main>
 
 
-                const status = document.createElement("span");
 
-                status.className = "chapter-status";
+    <footer>
 
-                status.textContent =
-                    chapter.type === "prologue"
-                    ? "PROLOGUE"
-                    : "CHAPTER " + chapter.number;
-
-
-                const title = document.createElement("h2");
-
-                title.textContent = chapter.title;
-
-
-                const description = document.createElement("p");
-
-                description.textContent =
-                    chapter.description || "The story continues...";
-
-
-                const link = document.createElement("a");
-
-                link.href =
-                    "reader.html?chapter=" +
-                    encodeURIComponent(chapter.id);
-
-                link.textContent =
-                    chapter.type === "prologue"
-                    ? "Read Prologue →"
-                    : "Read Chapter →";
-
-
-                content.appendChild(status);
-
-                content.appendChild(title);
-
-                content.appendChild(description);
-
-                content.appendChild(link);
-
-
-                card.appendChild(number);
-
-                card.appendChild(content);
-
-
-                list.appendChild(card);
-
-            });
-
-        })
-
-        .catch(error => {
-
-            console.error(error);
-
-            document.getElementById("chapters-list").innerHTML =
-                "<p>Unable to load chapters.</p>";
-
-        });
-
-    </script> 
-        
-      </main> 
-    
-    </footer>
-             
-      </p>
+        <p>
             © 2026 Chaotic World: Raid Of Sins
         </p>
 
     </footer>
 
-</body>
-    </html>
 
+
+    <script>
+
+        fetch("data/chapters.json?v=2")
+
+            .then(response => response.json())
+
+            .then(data => {
+
+
+                const list =
+                    document.getElementById("chapters-list");
+
+
+                list.innerHTML = "";
+
+
+                data.chapters.forEach(chapter => {
+
+
+                    const card =
+                        document.createElement("div");
+
+
+                    card.className =
+                        "chapter-card";
+
+
+                    const number =
+                        document.createElement("span");
+
+
+                    number.className =
+                        "chapter-number";
+
+
+                    number.textContent =
+                        chapter.number;
+
+
+
+                    const content =
+                        document.createElement("div");
+
+
+
+                    const status =
+                        document.createElement("span");
+
+
+                    status.className =
+                        "chapter-status";
+
+
+                    status.textContent =
+                        chapter.type === "prologue"
+
+                        ? "PROLOGUE"
+
+                        : "CHAPTER " + chapter.number;
+
+
+
+                    const title =
+                        document.createElement("h2");
+
+
+                    title.textContent =
+                        chapter.title;
+
+
+
+                    const description =
+                        document.createElement("p");
+
+
+                    description.textContent =
+                        chapter.description ||
+                        "The story continues...";
+
+
+
+                    const link =
+                        document.createElement("a");
+
+
+                    link.href =
+                        "reader.html?chapter=" +
+                        encodeURIComponent(chapter.id);
+
+
+                    link.textContent =
+                        chapter.type === "prologue"
+
+                        ? "Read Prologue →"
+
+                        : "Read Chapter →";
+
+
+
+                    content.appendChild(status);
+
+                    content.appendChild(title);
+
+                    content.appendChild(description);
+
+                    content.appendChild(link);
+
+
+
+                    card.appendChild(number);
+
+                    card.appendChild(content);
+
+
+
+                    list.appendChild(card);
+
+                });
+
+            })
+
+
+            .catch(error => {
+
+
+                console.error(error);
+
+
+                document.getElementById("chapters-list").innerHTML =
+
+                    "<p>Unable to load chapters.</p>";
+
+            });
+
+    </script>
+
+
+</body>
+
+        </html>
