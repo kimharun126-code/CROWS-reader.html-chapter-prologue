@@ -1,0 +1,21 @@
+{
+  "id": "chapter-01",
+  "number": "1",
+  "title": "YOUR CHAPTER ONE TITLE",
+  "type": "chapter",
+  "status": "published",
+  "content": [
+    "YOUR FIRST PARAGRAPH",
+    "YOUR SECOND PARAGRAPH"
+  ]
+}{
+  "id": "chapter-01",
+  "number": "1",
+  "title": "YOUR CHAPTER ONE TITLE",
+  "type": "chapter",
+  "status": "published",
+  "content": [
+    "YOUR FIRST PARAGRAPH",
+    "YOUR SECOND PARAGRAPH"
+  ]
+}
