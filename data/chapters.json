@@ -1,3 +1,12 @@
 {
-  "chapters": []
+  "chapters": [
+    {
+      "id": "prologue",
+      "number": "P",
+      "title": "The Beginning",
+      "type": "prologue",
+      "status": "published",
+      "content": []
+    }
+  ]
 }
