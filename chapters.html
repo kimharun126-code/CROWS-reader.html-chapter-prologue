@@ -183,22 +183,32 @@
 
 
 
-                    const link =
-                        document.createElement("a");
+                     const link =
+    document.createElement("a");
 
 
-                    link.href =
-                        "reader.html?chapter=" +
-                        encodeURIComponent(chapter.id);
+if (chapter.status === "published") {
 
+    link.href =
+        "reader.html?chapter=" +
+        encodeURIComponent(chapter.id);
 
-                    link.textContent =
-                        chapter.type === "prologue"
+    link.textContent =
+        chapter.type === "prologue"
+        ? "Read Prologue →"
+        : "Read Chapter →";
 
-                        ? "Read Prologue →"
+} else {
 
-                        : "Read Chapter →";
+    link.href = "#";
 
+    link.textContent = "Coming Soon";
+
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+    });
+
+}        
 
 
                     content.appendChild(status);
