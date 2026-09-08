@@ -100,6 +100,28 @@ main {
     color: #999;
     font-size: 15px;
 }
+.volume-label {
+    margin-top: 18px;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #b30000;
+}
+
+.volume-label span {
+    color: #555;
+    margin: 0 8px;
+}
+
+.volume-quote {
+    margin-top: 18px;
+    color: #777;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 3px;
+}
 
 .chapters-section,
 .characters-section,
