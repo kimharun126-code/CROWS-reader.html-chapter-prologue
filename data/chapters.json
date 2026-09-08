@@ -17,141 +17,141 @@
       "status": "published",
       "description": "The story continues...",
       "file": "data/chapter/chapter-01.json"
+    },
+    {
+      "id": "chapter-02",
+      "number": "2",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-02.json"
+    },
+    {
+      "id": "chapter-03",
+      "number": "3",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-03.json"
+    },
+    {
+      "id": "chapter-04",
+      "number": "4",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-04.json"
+    },
+    {
+      "id": "chapter-05",
+      "number": "5",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-05.json"
+    },
+    {
+      "id": "chapter-06",
+      "number": "6",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-06.json"
+    },
+    {
+      "id": "chapter-07",
+      "number": "7",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-07.json"
+    },
+    {
+      "id": "chapter-08",
+      "number": "8",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-08.json"
+    },
+    {
+      "id": "chapter-09",
+      "number": "9",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-09.json"
+    },
+    {
+      "id": "chapter-10",
+      "number": "10",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-10.json"
+    },
+    {
+      "id": "chapter-11",
+      "number": "11",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-11.json"
+    },
+    {
+      "id": "chapter-12",
+      "number": "12",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-12.json"
+    },
+    {
+      "id": "chapter-13",
+      "number": "13",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-13.json"
+    },
+    {
+      "id": "chapter-14",
+      "number": "14",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-14.json"
+    },
+    {
+      "id": "chapter-15",
+      "number": "15",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-15.json"
+    },
+    {
+      "id": "chapter-16",
+      "number": "16",
+      "title": "Coming Soon",
+      "type": "chapter",
+      "status": "draft",
+      "description": "Coming soon...",
+      "file": "data/chapter/chapter-16.json"
     }
   ]
-},
-{
-  "id": "chapter-02",
-  "number": "2",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-02.json"
-},
-{
-  "id": "chapter-03",
-  "number": "3",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-03.json"
-},
-{
-  "id": "chapter-04",
-  "number": "4",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-04.json"
-},
-{
-  "id": "chapter-05",
-  "number": "5",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-05.json"
-},
-{
-  "id": "chapter-06",
-  "number": "6",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-06.json"
-},
-{
-  "id": "chapter-07",
-  "number": "7",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-07.json"
-},
-{
-  "id": "chapter-08",
-  "number": "8",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-08.json"
-},
-{
-  "id": "chapter-09",
-  "number": "9",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-09.json"
-},
-{
-  "id": "chapter-10",
-  "number": "10",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-10.json"
-},
-{
-  "id": "chapter-11",
-  "number": "11",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-11.json"
-},
-{
-  "id": "chapter-12",
-  "number": "12",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-12.json"
-},
-{
-  "id": "chapter-13",
-  "number": "13",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-13.json"
-},
-{
-  "id": "chapter-14",
-  "number": "14",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-14.json"
-},
-{
-  "id": "chapter-15",
-  "number": "15",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-15.json"
-},
-{
-  "id": "chapter-16",
-  "number": "16",
-  "title": "Coming Soon",
-  "type": "chapter",
-  "status": "draft",
-  "description": "Coming soon...",
-  "file": "data/chapter/chapter-16.json"
-}
+    }
