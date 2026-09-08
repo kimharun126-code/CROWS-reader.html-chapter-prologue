@@ -14,7 +14,7 @@
       "title": "YOUR CHAPTER ONE TITLE",
       "type": "chapter",
       "status": "published",
-      "file": "data/chapter file/chapter-01.json"
+      "file": "data/chapter/chapter-01.json"
     }
   ]
 }
