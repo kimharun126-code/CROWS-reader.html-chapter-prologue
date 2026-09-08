@@ -56,7 +56,103 @@
         </section>
 
 
-        <section class="chapters-section">
+        <section class="chapters-section" id="chapters-list">
+
+    <p>Loading chapters...</p>
+
+</section>
+
+<script>
+
+    fetch("data/chapters.json?v=2")
+
+        .then(response => response.json())
+
+        .then(data => {
+
+            const list = document.getElementById("chapters-list");
+
+            list.innerHTML = "";
+
+            data.chapters.forEach(chapter => {
+
+                const card = document.createElement("div");
+
+                card.className = "chapter-card";
+
+                const number = document.createElement("span");
+
+                number.className = "chapter-number";
+
+                number.textContent = chapter.number;
+
+
+                const content = document.createElement("div");
+
+
+                const status = document.createElement("span");
+
+                status.className = "chapter-status";
+
+                status.textContent =
+                    chapter.type === "prologue"
+                    ? "PROLOGUE"
+                    : "CHAPTER " + chapter.number;
+
+
+                const title = document.createElement("h2");
+
+                title.textContent = chapter.title;
+
+
+                const description = document.createElement("p");
+
+                description.textContent =
+                    chapter.description || "The story continues...";
+
+
+                const link = document.createElement("a");
+
+                link.href =
+                    "reader.html?chapter=" +
+                    encodeURIComponent(chapter.id);
+
+                link.textContent =
+                    chapter.type === "prologue"
+                    ? "Read Prologue →"
+                    : "Read Chapter →";
+
+
+                content.appendChild(status);
+
+                content.appendChild(title);
+
+                content.appendChild(description);
+
+                content.appendChild(link);
+
+
+                card.appendChild(number);
+
+                card.appendChild(content);
+
+
+                list.appendChild(card);
+
+            });
+
+        })
+
+        .catch(error => {
+
+            console.error(error);
+
+            document.getElementById("chapters-list").innerHTML =
+                "<p>Unable to load chapters.</p>";
+
+        });
+
+</script>
 
             <!-- PROLOGUE -->
 
