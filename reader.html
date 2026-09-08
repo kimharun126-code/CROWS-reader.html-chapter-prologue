@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chaotic World: Raid Of Sins</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <a href="index.html" class="logo">
+                CHAOTIC WORLD
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="story.html">Story</a>
+                <a href="chapters.html">Chapters</a>
+                <a href="characters.html">Characters</a>
+                <a href="world.html">World</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="chapter-header">
+
+            <span class="eyebrow" id="chapter-type">
+                CHAOTIC WORLD: RAID OF SINS
+            </span>
+
+            <h1 id="chapter-title">
+                Loading...
+            </h1>
+
+            <div class="chapter-divider"></div>
+
+        </section>
+
+
+        <article class="chapter-content" id="chapter-content">
+
+            <p>
+                Loading chapter...
+            </p>
+
+        </article>
+
+
+        <section class="chapter-navigation">
+
+            <a href="chapters.html">
+                ← All Chapters
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Chaotic World: Raid Of Sins
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+
+        const chapterId = params.get("chapter");
+
+
+        fetch("data/chapters.json")
+
+            .then(response => response.json())
+
+            .then(data => {
+
+                const chapter = data.chapters.find(
+                    item => item.id === chapterId
+                );
+
+
+                if (!chapter) {
+
+                    document.getElementById("chapter-title").textContent =
+                        "Chapter Not Found";
+
+                    document.getElementById("chapter-content").innerHTML =
+                        "<p>This chapter does not exist.</p>";
+
+                    return;
+
+                }
+
+
+                document.getElementById("chapter-title").textContent =
+                    chapter.title;
+
+
+                document.getElementById("chapter-type").textContent =
+                    chapter.type.toUpperCase();
+
+
+                const content =
+                    document.getElementById("chapter-content");
+
+
+                content.innerHTML = "";
+
+
+                chapter.content.forEach(paragraph => {
+
+                    const p = document.createElement("p");
+
+                    p.textContent = paragraph;
+
+                    content.appendChild(p);
+
+                });
+
+            })
+
+            .catch(error => {
+
+                console.error(error);
+
+                document.getElementById("chapter-title").textContent =
+                    "Unable to Load Chapter";
+
+                document.getElementById("chapter-content").innerHTML =
+                    "<p>Something went wrong while loading this chapter.</p>";
+
+            });
+
+    </script>
+
+</body>
+
+</html>
